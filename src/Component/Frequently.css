@@ -1,0 +1,161 @@
+.Frequently {
+    margin: 0%;
+    align-items: center;
+    justify-content: center;
+}
+.fre-h6 {
+    font-family: SF Pro Display;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.05px;
+    vertical-align: middle;
+    background-color: #f5fefe;
+    color: #078586;
+    /* background: rgba(8, 159, 160, 1); */
+    width: 100px;
+    margin: auto;
+}
+.fre-h4 {
+    font-family: SF Pro Display;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: -3%;
+    text-align: center;
+    vertical-align: middle;
+}
+.card {
+    border: 2px solid #078586;
+    text-align: left;
+    width: 700px;
+    padding: 10px;
+    padding-left: 15px;
+    margin: auto;
+}
+.card-h6 {
+    font-family: SF Pro Display;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.26px;
+    vertical-align: middle;
+
+}
+.card-p {
+    font-family: SF Pro Display;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.05px;
+    vertical-align: middle;
+
+}
+.card-a {
+    font-family: SF Pro Display;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.02px;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.accordion-container {
+    display: flex;
+    justify-content: center;
+}
+.accordion-button {
+    border-radius: 10px !important;
+    width: 600px;
+    /* background-color: white !important; */
+    font-weight: 600;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.08);
+    /* transition: background-color 0.2s ease; */
+  }
+  .accordion-gap {
+    margin-bottom: 15px;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: #f8f9fa !important;
+    box-shadow: none;
+  }
+  
+  .accordion-button::after {
+    transform: scale(1.2);
+    margin-left: auto;
+  }
+  
+  .accordion-body {
+    width: 600px;
+    text-align: left;
+    padding: 1rem 1.25rem;
+    background-color: #fafafa;
+    border-top: 1px solid #e9ecef;
+    border-radius: 0 0 10px 10px;
+  }
+  .question {
+    /* background-color: #f7f7f4; */
+    background: rgba(247, 247, 244, 1);
+    width: 600px;
+    height: 200px;
+    margin: auto;
+    border-radius: 20px;
+    padding-top: 30px;
+  }
+  .question-h5 {
+    font-family: SF Pro Display;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -2%;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .question-p {
+    font-family: SF Pro Display;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.18px;
+    text-align: center;
+    vertical-align: middle;
+
+  }
+  .question-btn {
+    width: 25%;
+    height: 40px;
+    gap: 8px;
+    border: none;
+    color: white;
+    padding-right: 14px;
+    padding-left: 14px;
+    border-radius: 6px;
+    background: rgba(7, 133, 134, 1);
+
+  }
+@media screen and (max-width: 600px)  {
+    .fre-h4 {
+        font-size: 25px;
+    }
+    .card {
+        width: 95%;
+        height: 150px;
+    }
+    .accordion-button {
+        width: 340px;
+    }
+    .accordion-body {
+        width: 340px;
+    }
+    .question {
+        width: 100%;
+    }
+    .question-p {
+        font-size: 14px;
+    }
+    .question-btn {
+        width: 50%;
+    }
+}
