@@ -22,7 +22,7 @@ function NavigationBar() {
             <Link to="/" className="home" id="line">Why McAderson?</Link>
             <Link to="/Learningpaths" className="home">Learning paths</Link>
             <Link to="/Keyfeatures" className="home">Key features</Link>
-            <Link to="/FAQ" className="home">FAQ</Link>
+            <Link to="/Faq" className="home">FAQ</Link>
           </Nav>
 
           {/* Sign-Up Button */}

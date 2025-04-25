@@ -4,7 +4,7 @@ import NavigationBar from './Component/NavigationBar'
 import TopMenuItem from './Pages/TopMenuItem'
 import Learningpaths from './Pages/Learningpaths'
 import Keyfeatures from './Pages/Keyfeatures'
-import FAQ from './Pages/FAQ'
+import Faq from './Pages/Faq'
 function App() {
 
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<TopMenuItem />} />
         <Route path="/Learningpaths" element={<Learningpaths />} />
         <Route path="/Keyfeatures" element={<Keyfeatures />} />
-        <Route path="/FAQ" element={<FAQ />} />
+        <Route path="/Faq" element={<Faq />} />
       </Routes>
     </>
   )
