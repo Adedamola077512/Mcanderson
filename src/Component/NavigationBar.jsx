@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav, Container, Button, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { AiOutlineLoading3Quarters } from "react-icons/ai";
+// import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import './NavigationBar.css';
 import logo1 from '../assets/logo1.png'; // Import your logo image
 
