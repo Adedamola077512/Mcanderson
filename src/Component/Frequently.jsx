@@ -5,7 +5,7 @@ import { Accordion } from 'react-bootstrap';
 
 const Frequently = () => {
   return (
-    <div className='text-center mt-5 py-5 Frequently'>
+    <div className='text-center mt-5 py-5 Frequently' id='FAQ'>
       <h6 className='fre-h6'>Tagline here</h6>
       <h4 className='fre-h4'>Frequently Asked Questions</h4>
 

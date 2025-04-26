@@ -9,7 +9,7 @@ import img6 from "../assets/img6.png"
 import img7 from "../assets/img7.png"
 const Journey = () => {
   return (
-    <div className='container text-center mt-5 mb-5 py-5'> 
+    <div className='container text-center mt-5 mb-5 py-5' id='Why McAderson?'> 
         <div>
             <h6 className='journey-h6'>Why Join Our Waitlist?</h6>
             <h4 className='journey-h4'>Get Ready to Revolutionize Your Learning Journey!</h4>

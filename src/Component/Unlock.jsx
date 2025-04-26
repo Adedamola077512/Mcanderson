@@ -3,7 +3,7 @@ import './Unlock.css'
 import mask from '../assets/mask.png'
 const Unlock = () => {
   return (
-    <div className='unlock'>
+    <div className='unlock' id='Key features'>
         <div >
             <h6 className='unlock-h6'>Exciting features</h6>
             <h4 className='unlock-h4'>Unlock Your Potential with Our Featured Offerings</h4>

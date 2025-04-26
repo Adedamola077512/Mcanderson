@@ -2,7 +2,7 @@ import React from 'react'
 import './Header.css'
 const Header = () => {
   return (
-    <div className='header py-5'>
+    <div className='header py-5' id='Learning paths'>
         <div className='container header-flex'>
             <div>
                 <h2 className='header-h2'>One of the best learning <br />management system <br />tools available</h2>
