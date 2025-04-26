@@ -1,35 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, Container, Button, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-// import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import './NavigationBar.css';
-import logo1 from '../assets/logo1.png'; // Import your logo image
+import logo1 from '../assets/logo1.png';
 
 function NavigationBar() {
+  const [expanded, setExpanded] = useState(false);
+
   return (
-    <Navbar expand="lg" variant="light" sticky="top" className="py-3 scalloped">
+    <Navbar expand="lg" variant="light" sticky="top" className="py-3 scalloped" expanded={expanded}>
       <Container>
 
         {/* Brand Logo */}
-        <Navbar.Brand className="" data-aos="fade-right">
-          <Link to="/">
+        <Navbar.Brand data-aos="fade-right">
+          <Link to="/" onClick={() => setExpanded(false)}>
             <img src={logo1} alt="Logo" className="logo" />
           </Link>
         </Navbar.Brand>
 
         {/* Navbar Toggle */}
-        <Navbar.Toggle aria-controls="navbar-nav" />
+        <Navbar.Toggle aria-controls="navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")} />
 
         {/* Navbar Links and Button */}
         <Navbar.Collapse id="navbar-nav" className="justify-content-center">
           <Nav className="mx-auto text-center" data-aos="fade-up">
 
             {/* Navigation Links */}
-            <a href="#Learning paths" className="home">Learning paths</a>
-            <a href="#Why McAderson?" className="home" id="line">Why McAderson?</a>
-            <a href="#Key features" className="home">Key features</a>
-            <a href="#FAQ" className="home">FAQ</a>
+            <a href="#Learning paths" className="home" onClick={() => setExpanded(false)}>Learning paths</a>
+            <a href="#Why McAderson?" className="home" id="line" onClick={() => setExpanded(false)}>Why McAderson?</a>
+            <a href="#Key features" className="home" onClick={() => setExpanded(false)}>Key features</a>
+            <a href="#FAQ" className="home" onClick={() => setExpanded(false)}>FAQ</a>
 
           </Nav>
 
@@ -42,7 +43,7 @@ function NavigationBar() {
             <svg
               aria-hidden="true"
               role="status"
-              class="inline w-4 h-4 mr-3 text-white animate-spin"
+              className="inline w-4 h-4 mr-3 text-white animate-spin"
               viewBox="0 0 100 101"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -60,6 +61,7 @@ function NavigationBar() {
           </button>
 
         </Navbar.Collapse>
+
       </Container>
     </Navbar>
   );
