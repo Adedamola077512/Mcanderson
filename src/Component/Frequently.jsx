@@ -2,6 +2,7 @@ import React from 'react';
 import './Frequently.css';
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Accordion } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Frequently = () => {
   return (
@@ -60,10 +61,13 @@ const Frequently = () => {
       </div>
 
       {/* Question */}
-      <div className='question'>
+      <div className='question mt-2'>
         <h5 className='question-h5'>Still have questions?</h5>
         <p className='question-p'>if you couldn't your question, get in contact with us now to get your answers </p>
-        <button className='question-btn'>Contact us</button>
+        {/* link to contact page */}
+        <Link to="/Contact" className='question-btn'>Contact us</Link>
+        {/* <Link to="/Contact" className='question-btn'>Contact us</Link> */}
+        {/* <button className='question-btn'>Contact us</button> */}
       </div>
     </div>
   );

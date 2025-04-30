@@ -125,12 +125,12 @@
   }
   .question-btn {
     width: 25%;
+    text-decoration: none;
+    padding: 10px 30px;
     height: 40px;
     gap: 8px;
     border: none;
     color: white;
-    padding-right: 14px;
-    padding-left: 14px;
     border-radius: 6px;
     background: rgba(7, 133, 134, 1);
 

@@ -5,6 +5,7 @@ import TopMenuItem from './Pages/TopMenuItem'
 import Learningpaths from './Pages/Learningpaths'
 import Keyfeatures from './Pages/Keyfeatures'
 import Faq from './Pages/Faq'
+import Contacts from './Pages/Contacts'
 function App() {
 
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/Learningpaths" element={<Learningpaths />} />
         <Route path="/Keyfeatures" element={<Keyfeatures />} />
         <Route path="/Faq" element={<Faq />} />
+        <Route path="/Contact" element={<Contacts />} />
       </Routes>
     </>
   )
